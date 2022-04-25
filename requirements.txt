@@ -1,3 +1,9 @@
-streamlit
-sklearn
 matplotlib
+pickleshare
+Pillow
+pandas
+numpy
+scikit-learn
+seaborn
+streamlit
+forex-python

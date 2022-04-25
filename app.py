@@ -1,17 +1,11 @@
-from matplotlib.pyplot import title
 import streamlit as st
-from predict import predictPage
-from explore import explorePage
+from predict_page import show_predict_page
+from explore_page import show_explore_page
 
-st.set_page_config(
-    page_title="Software Developers Salary Prediciton",
-    layout="wide"
-)
 
 page = st.sidebar.selectbox("Explore Or Predict", ("Predict", "Explore"))
 
-
 if page == "Predict":
-    predictPage()
+    show_predict_page()
 else:
-    explorePage()
+    show_explore_page()
